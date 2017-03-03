@@ -10,25 +10,25 @@ package problema2;
  * @author Sanchez Diaz
  */
 public class Enemigos {
-    private String tipo;
+    private char tipo;
     private int tiempoConsume;
 
     public Enemigos() {
     }
-    public Enemigos(String tipo, String tiempoConsume) {
+    public Enemigos(char tipo, String tiempoConsume) {
         this.tipo = tipo;
         this.tiempoConsume = Integer.parseInt(tiempoConsume);
     }
-    public Enemigos(String tipo, int tiempoConsume) {
+    public Enemigos(char tipo, int tiempoConsume) {
         this.tipo = tipo;
         this.tiempoConsume = tiempoConsume;
     }
 
-    public String getTipo() {
+    public char getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(char tipo) {
         this.tipo = tipo;
     }
 
@@ -39,10 +39,9 @@ public class Enemigos {
     public void setTiempoConsume(int tiempoConsume) {
         this.tiempoConsume = tiempoConsume;
     }
-
+ 
     @Override
     public String toString() {
         return ""+tipo+" "+tiempoConsume;
     }
-    
 }
